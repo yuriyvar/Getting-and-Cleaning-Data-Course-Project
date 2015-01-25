@@ -26,7 +26,7 @@ subj_train <- read.table("./train/subject_train.txt", quote="\"",col.names = "su
 
 # Combining the X datasets to form a base dataset with 10,299 rows and 561 columns
 comb_X <- rbind(test_X, train_X)
-# Selecting only those rows that contain 'mean' and 'std' data
+# Selecting only those columns that contain 'mean' and 'std' data
 comb_X <- comb_X[,grep("mean|std", colnames(comb_X))]
 # Combining the Y data sets
 comb_Y <- rbind(test_Y, train_Y)

@@ -1,4 +1,6 @@
 # Getting-and-Cleaning-Data-Course-Project - README file
+The data for this Project is located on the webserver at the following address: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 For R to use the data it needs to be first downloaded and unzipped using download.file() and unzip() R functions. To do that those functions needs to be placed in R and the new R script file should be stored as run_analysis.R. Remember to set up a working directory using setwd() where the file will be downloaded and unzipped.
 
 Once the zipped file is downloaded and unzipped, two additional folders '/test' and '/train' are created in the newly created directory 'UCI HAR Dataset'. Those folders each contain test and train data that will be used for this assignment.  Files for 'x', 'y' and 'subject' are the data sources that will be used in this exercise. The headers that will be used for the data tables are stored in features.txt file.

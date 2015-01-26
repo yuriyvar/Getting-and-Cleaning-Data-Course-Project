@@ -6,18 +6,17 @@ A zipped file is downloaded and stored as 'GCD_Project_Dataset.zip' from the abo
 
 Once the download is confirmed, the fiel is uzipped into the same directory. IT contains subdirectories '/test' and '/train' in the 'UCI HAR Dataset' folder. In this folder there is a file named features.txt, containing the headers that will be used for reading data files 'x_test.txt and x_train.txt'. The number of rows in features.txt corresponds with the number of columns in the 'x' files named above.
 
-FEATURES.txt
-	Column Names: V1, V1 – 561 observations in each
-		- V1 is integer
-		- V2 is character
+FEATURES.txt: Column Names -> V1, V1 with 561 observations in each
+- V1 is formatted as integer
+- V2 is formatted as character
 
 x_test.txt and x_train.txt files each contain 561 columns with numeric data
-	- x_test.txt contains 2,947 observations
-	- x_train.txt – 7,352 observations
+- x_test.txt contains 2,947 observations
+- x_train.txt – 7,352 observations
 	
 y_test.txt, subject_test.txt, y_train.txt, subject_train.txt 
-		- each consist of 1 column of integers
-		- 'test' files are 2,947 and 'train' files – 7,352 rows long
+- each consist of 1 column of integers
+- 'test' files are 2,947 and 'train' files – 7,352 rows long
 
 After combining and merging 'x', 'y', and 'subject' data sets (removing unnecessary columns that are not pertinent to this analysis) a large data set 'joined_df' is formed by using cbind() function with the combined tables above.
 
